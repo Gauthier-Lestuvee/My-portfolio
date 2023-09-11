@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr" style="transition: 1s; scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koro - Portfolio</title>
+    <!--Personal Link-->
+    <link rel="icon" type="image/x-icon" href="assets/favico.ico" />
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/wave.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/core.css">
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!--CDN fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <!-- JavaScript de jQuery (nécessaire pour Bootstrap JavaScript Plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+</head>
+<body class="body" style="transition: 1s; scroll-behavior: smooth;">
+    <link rel="stylesheet" href="css/progress-bar.css">
+    <div id="progress-bar"></div>
+    <script>
+        // Récupération de la hauteur totale de la page
+        const body = document.body,
+          html = document.documentElement;
+        const height = Math.max(
+          body.scrollHeight,
+          body.offsetHeight,
+          html.clientHeight,
+          html.scrollHeight,
+          html.offsetHeight
+        );
+        // Fonction pour mettre à jour la largeur de la barre de progression
+        function updateProgressBar() {
+          const scrollTop =
+            window.pageYOffset || document.documentElement.scrollTop;
+          const progress = (scrollTop / (height*2) ) * 150;
+          document.getElementById("progress-bar").style.width = progress + "%";
+        }
+        // Appel de la fonction de mise à jour de la barre de progression au chargement de la page et à chaque événement de défilement
+        window.addEventListener("load", updateProgressBar);
+        window.addEventListener("scroll", updateProgressBar);
+      </script>
+<div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+        <h1 class="titleh1">「𝒦𝑜𝓇𝑜」</h1>
+        <h3>Etudiant Système Numérique - Développeur Web Front-End</h3>
+        <br>
+        <ul class="ul-list">
+            <li>
+                <a class="button" href="#presentation">Présentation</a>
+                <a class="button" href="#skills">Compétences</a>
+                <!--<a class="button" href="#achievements">Réalisations</a>-->
+                <a class="button" href="https://discord.gg/VgccxjVYwf">Contactez-moi</a>
+            </li>
+        </ul>
+    </div>
+    <link rel="stylesheet" href="css/scare-anim.css">
+    <div class="area" >
+        <ul class="circles">
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+                <li class="li-scare"></li>
+        </ul>
+    </div>
+    <!--Waves Container-->
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+    </div>
+    <!--Waves end-->
+
+    </div>
+    <!--Header ends-->
+
+    <!--Content starts-->
+    <div class="content flex space">
+        <h2 id="presentation" class="presentation h2p">Présentation</h2>
+        <p class="presentation-paragraph">Bonjour, je m'appelle Koro, j'ai 17 ans et je suis passionné de développement web depuis bientôt 4 ans. J'ai commencé en développant des sites web pour m'amuser et m'entraîner, et j'ai rapidement découvert que j'avais un véritable talent pour le frontend, où je peux donner libre cours à ma créativité et mon amour du web design. Je suis un perfectionniste dans l'âme et je porte une grande attention à tous les détails de mes projets, pour obtenir le meilleur résultat possible. J'aime travailler de manière personnalisée et adapter chaque projet à mes clients, tout en respectant le thème initial. J'utilise des codes couleurs et des formes pour créer des designs originaux et uniques qui répondent aux besoins de mes clients.</p>
+        <div class="br"></div>
+            <h2 id="skills" class="skills h2p">Compétences</h2>
+            <link rel="stylesheet" href="css/skills.css">
+            <div class="container-skills">
+                <div class="skills-paragraph">
+                    <div class="paragraph-skills-params">
+                        <div class="size-skills"><i class="fas fa-comments"></i></div>
+                        <h3>HTML/CSS</h3>
+                        <p>Avec plus de trois ans de pratique, je suis pratiquement capable de répondre à n'importe quelle demande dans le domaine du frontend, et je suis heureux de pouvoir mettre mes compétences au service de projets passionnants et innovants !</p>
+                    </div>
+                    <div class="paragraph-skills-params">
+                        <div class="size-skills"><i class="fas fa-money-bill"></i></div>
+                        <h3>JavaScript</h3>
+                        <p>Depuis un an, j'apprends le JavaScript pour créer des animations innovantes et esthétiques qui ajouteront une touche de magie à vos projets web. C'est une passion pour moi de faire en sorte que chaque réalisation soit une expérience unique et inspirante pour vous.</p>
+                    </div>
+                    <div class="paragraph-skills-params">
+                        <div class="size-skills"><i class="fas fa-wind"></i></div>
+                        <h3>Administrateur Système</h3>
+                        <p>Je suis là pour vous aider non seulement à créer votre site web, mais aussi à l'installer sur votre hébergeur. Ensemble, nous allons transformer votre projet en ligne en une réalité souriante et inspirante !</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="skills-subtitle">Vous pouvez rejoindre mon <a class="a-under-skills" href="https://discord.gg/VgccxjVYwf" target="_blank">serveur Discord</a> pour avoir les avis des clients.</h3>
+            <style>
+                .a-under-skills{
+                    color: #565656;
+                }
+
+                .a-under-skills:hover{
+                    text-decoration: none;
+                    color: #363636;
+                }
+            </style>
+    <div class="br"></div>
+    <!--<div id="achievements"></div>
+    <h2 class="achievements h2p">Réalisations</h2>
+    <link rel="stylesheet" href="css/modal.css">
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <img class="img-fluid-before" src="assets/img/portfolio/sundace_logo.png" alt="Logo indisponible pour le moment" />
+                        <h4>Sundace Rôleplay</h4>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <img class="img-fluid-before" src="assets/img/portfolio/ASlog.png" alt="Logo indisponible pour le moment" />
+                        <h4>American Stories</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Sundace Rôleplay</h2>
+                                    <a class="see-web" href="https://sundacerp.wstr.fr" target="_blank">Voir le site</a>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/sundace_logo.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <h3 style="text-decoration: underline;">Avis de Mathieu Sanchez</h3>
+                                    <p class="mb-4">Koro est une personne sérieuse et très impliquée dans son travail. Grâce à sa communication parfaite, il est facile de collaborer avec lui. Il est capable de travailler rapidement et avec soin, tout en offrant des tarifs très attractifs. En somme, je recommande Koro à 100% pour tout projet de développement web.</p>
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                        <i class="fas fa-ban"></i>
+                                        Fermer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">American Stories</h2>
+                                    <a class="see-web" href="http://site.americanstories.fr/index.html" target="_blank">Voir le site</a>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/ASlog.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <h3 style="text-decoration: underline;">Avis de Niksooh</h3>
+                                    <p class="mb-4">C'est un travail soigneusement exécuté, qui témoigne d'un haut niveau de compétence et de professionnalisme. Il est évident que les efforts considérables ont été déployés pour garantir que tous les aspects du projet soient abordés avec précision et que le résultat final soit de qualité supérieure.</p>
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                                        <i class="fas fa-ban"></i>
+                                        Fermer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
